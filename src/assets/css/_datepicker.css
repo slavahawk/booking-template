@@ -1,0 +1,24 @@
+.p-datepicker-panel {
+    width: auto;
+    padding: 0 !important;
+    border: none !important;
+}
+
+
+.p-datepicker-day-cell {
+    padding: 1px !important;
+}
+
+.p-datepicker-day-view {
+    font-size: 12px !important;
+}
+
+.p-datepicker-day {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+
+.p-datepicker-header {
+    padding: 0 !important;
+}

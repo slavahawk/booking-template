@@ -1,0 +1,49 @@
+/* Основные стили для заголовков */
+h1, h2, h3, .font-default, .font-large {
+    color: var(--booking-color-main-black);
+}
+
+.font-small, .font-input-label {
+    color: var(--booking-color-main-gray);
+}
+
+h1 {
+    font: var(--font-h1);
+    line-height: var(--booking-line-height-h1);
+}
+
+h2 {
+    font: var(--font-h2);
+    line-height: var(--booking-line-height-h2);
+}
+
+h3 {
+    font: var(--font-h3);
+    line-height: var(--booking-line-height-h3);
+}
+
+/* Упрощение классов для текста */
+.font-default {
+    font: var(--font-default);
+    line-height: var(--booking-line-height-small);
+}
+
+.font-small {
+    font: var(--font-small);
+    line-height: var(--booking-line-height-small);
+}
+
+.font-large {
+    font: var(--font-large);
+    line-height: var(--booking-line-height-large);
+}
+
+.font-input-label {
+    font: var(--font-input-label);
+    line-height: var(--booking-line-height-input-label);
+}
+
+/* Классы для жирного и нормального текста */
+.font-bold {
+    font: var(--booking-font-weight-bold) var(--booking-font-family);
+}

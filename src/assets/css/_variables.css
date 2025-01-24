@@ -1,0 +1,53 @@
+:root {
+    --booking-font-family: Inter;
+
+    --booking-font-size-h1: 32px;
+    --booking-line-height-h1: 40px;
+    --booking-font-size-h2: 24px;
+    --booking-line-height-h2: 32px;
+    --booking-font-size-h3: 18px;
+    --booking-line-height-h3: 24px;
+
+    --booking-font-size-small: 12px;
+    --booking-line-height-small: 16px;
+    --booking-font-size-large: 16px;
+    --booking-line-height-large: 24px;
+    --booking-font-size-input-label: 14px;
+    --booking-line-height-input-label: 17px;
+
+    --booking-font-weight-default: 400;
+    --booking-font-weight-bold: 500;
+
+    --booking-border-width: 2px;
+    --booking-border-radius-s: 4px;
+    --booking-border-radius-m: 6px;
+    --booking-border-radius-l: 8px;
+    --booking-border-radius-xl: 12px;
+
+    /*custom border*/
+    --booking-custom-border: 1px solid #e8ecf7;
+
+    /* Цвета */
+    --booking-color-main-black: #2B3134;
+    --booking-color-main-gray: #71757F;
+    --booking-color-main-light-grey: #C6CBD3;
+    --booking-color-main-white: #FFFFFF;
+
+    --booking-color-accent-yellow: #FFCB00;
+    --booking-color-accent-blue: #0041E5;
+    --booking-color-accent-green: #29C235;
+
+    --booking-color-background-grey: #F7F9FC;
+
+    --booking-shadow-black: 0px 1px 2px rgba(33, 47, 65, 0.35);
+    --booking-shadow-yellow: 0px 1px 2px rgba(162, 137, 40, 0.35);
+
+    /* Font definitions */
+    --font-default: normal var(--booking-font-weight-default) var(--booking-font-size-small) var(--booking-font-family);
+    --font-h1: normal var(--booking-font-weight-default) var(--booking-font-size-h1) var(--booking-font-family);
+    --font-h2: normal var(--booking-font-weight-default) var(--booking-font-size-h2) var(--booking-font-family);
+    --font-h3: normal var(--booking-font-weight-default) var(--booking-font-size-h3) var(--booking-font-family);
+    --font-small: normal var(--booking-font-weight-default) var(--booking-font-size-small) var(--booking-font-family);
+    --font-large: normal var(--booking-font-weight-default) var(--booking-font-size-large) var(--booking-font-family); /* Исправлено */
+    --font-input-label: normal var(--booking-font-weight-default) var(--booking-font-size-input-label) var(--booking-font-family);
+}

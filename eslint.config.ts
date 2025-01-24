@@ -6,11 +6,6 @@ import pluginVitest from '@vitest/eslint-plugin'
 import pluginCypress from 'eslint-plugin-cypress/flat'
 import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
 
-// To allow more languages other than `ts` in `.vue` files, uncomment the following lines:
-// import { configureVueProject } from '@vue/eslint-config-typescript'
-// configureVueProject({ scriptLangs: ['ts', 'tsx'] })
-// More info at https://github.com/vuejs/eslint-config-typescript/#advanced-setup
-
 export default defineConfigWithVueTs(
   {
     name: 'app/files-to-lint',
@@ -24,18 +19,27 @@ export default defineConfigWithVueTs(
 
   pluginVue.configs['flat/essential'],
   vueTsConfigs.recommended,
-  
+
   {
     ...pluginVitest.configs.recommended,
     files: ['src/**/__tests__/*'],
   },
-  
+
   {
     ...pluginCypress.configs.recommended,
-    files: [
-      'cypress/e2e/**/*.{cy,spec}.{js,ts,jsx,tsx}',
-      'cypress/support/**/*.{js,ts,jsx,tsx}'
-    ],
+    files: ['cypress/e2e/**/*.{cy,spec}.{js,ts,jsx,tsx}', 'cypress/support/**/*.{js,ts,jsx,tsx}'],
   },
+
+  // Новый блок с правилами
+  {
+    rules: {
+      'vue/multi-word-component-names': 'off', // Отключение правила многословности имён компонентов
+      // 'no-console': 'warn', // Предупреждение, если используется console.log
+      // 'no-unused-vars': 'warn', // Предупреждение о неиспользуемых переменных
+      // eqeqeq: ['error', 'always'], // Обязательно использование `===` и `!==`
+      // // Добавьте другие свои правила здесь
+    },
+  },
+
   skipFormatting,
 )
