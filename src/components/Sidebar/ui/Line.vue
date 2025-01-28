@@ -4,7 +4,8 @@
 
 <script setup lang="ts"></script>
 
-<style scoped lang="scss">
+/
+<style scoped>
 .line {
   border-bottom: var(--booking-custom-border);
   display: block;

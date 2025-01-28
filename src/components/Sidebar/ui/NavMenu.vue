@@ -89,9 +89,4 @@ const items = ref([
 ])
 </script>
 
-<style scoped lang="scss">
-.nav__top {
-  padding: 8px 12px;
-  width: 100%;
-}
-</style>
+<style scoped></style>
