@@ -43,7 +43,7 @@ import { LANG } from '@/const/localStorage.ts'
 const { user } = storeToRefs(useUserStore())
 const { t, locale } = useI18n({ useScope: 'global' })
 
-const form = reactive({
+const form = reactive<any>({
   name: '',
   lang: '',
   city: '',

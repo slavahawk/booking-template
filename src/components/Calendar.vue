@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 import FullCalendar from '@fullcalendar/vue3'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import ruLocale from '@fullcalendar/core/locales/ru'

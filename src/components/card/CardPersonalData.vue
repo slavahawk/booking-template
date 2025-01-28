@@ -44,9 +44,9 @@ const { t } = useI18n()
 
 const { user } = storeToRefs(useUserStore())
 
-const fileInput = ref(null)
+const fileInput = ref<any>(null)
 const uploadButton = ref(null)
-const selectedFile = ref(null)
+const selectedFile = ref<any>(null)
 
 if (user.value) {
   selectedFile.value = user.value.img
@@ -56,7 +56,7 @@ const openUpload = () => {
   fileInput.value.click()
 }
 
-const handleSubmit = (event) => {
+const handleSubmit = (event: any) => {
   const target = event.target
   const file = target.files[0]
   selectedFile.value = URL.createObjectURL(file)
