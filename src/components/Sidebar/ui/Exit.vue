@@ -3,8 +3,8 @@
     <Line />
     <div class="flex justify-between py-1 px-2">
       <div>
-        <div class="font-bold">Вячеслав</div>
-        <div class="font-small mt-[2px]">krylov_s10@mail.ru</div>
+        <div class="font-bold">{{ user.name }}</div>
+        <div class="font-small mt-[2px]">{{ user.email }}</div>
       </div>
       <Button variant="text" icon="pi pi-sign-out" />
     </div>
@@ -14,9 +14,13 @@
 <script setup lang="ts">
 import { Button } from 'primevue'
 import Line from './Line.vue'
+import { storeToRefs } from 'pinia'
+import { useUserStore } from '@/stores/user.ts'
+
+const { user } = storeToRefs(useUserStore())
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 .Exit {
   position: fixed;
   bottom: 0;

@@ -17,7 +17,6 @@
 
     --booking-font-weight-default: 400;
     --booking-font-weight-bold: 500;
-
     --booking-border-width: 2px;
     --booking-border-radius-s: 4px;
     --booking-border-radius-m: 6px;
@@ -26,6 +25,7 @@
 
     /*custom border*/
     --booking-custom-border: 1px solid #e8ecf7;
+    --booking-custom-background-super-light-gray: #eaeef4;
 
     /* Цвета */
     --booking-color-main-black: #2B3134;

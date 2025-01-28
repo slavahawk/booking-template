@@ -9,7 +9,7 @@ import { Sidebar } from '@/components/Sidebar'
     <Sidebar />
     <div class="content">
       <Header />
-      <div class="p-2">
+      <div class="p-6">
         <RouterView />
       </div>
     </div>

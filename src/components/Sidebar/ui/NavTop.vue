@@ -6,15 +6,21 @@
       </RouterLink>
       <div>Мистер бренд</div>
     </div>
-    <i class="pi pi-bell"></i>
+    <Button icon="pi pi-bell" variant="text" @click="showNotification = true"></Button>
+    <DrawNotification v-model:show="showNotification" />
   </div>
 </template>
 
 <script setup lang="ts">
+import DrawNotification from '@/components/Notification/DrawNotification.vue'
+import { ref } from 'vue'
 import { AppRoutes } from '@/router'
+import { Button } from 'primevue'
+
+const showNotification = ref(false)
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 .nav__top {
   padding: 8px 12px;
   width: 100%;

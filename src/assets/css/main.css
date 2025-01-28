@@ -11,3 +11,13 @@ body {
     font: var(--font-default);
     color: var(--booking-color-main-black);
 }
+
+
+.floatLabel {
+    margin: 18px 0;
+
+
+    input, textarea {
+        font: var(--font-small);
+    }
+}

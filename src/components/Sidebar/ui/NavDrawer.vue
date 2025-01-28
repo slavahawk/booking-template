@@ -1,5 +1,5 @@
 <template>
-  <Drawer v-model:visible="isVisible" class="!w-[220px]" :show-close-icon="false">
+  <Drawer v-model:visible="isVisible" class="drawerMenu !w-[220px]" :show-close-icon="false">
     <template #header>
       <NavTop />
     </template>
@@ -36,10 +36,12 @@ const isVisible = computed({
 </script>
 
 <style>
-.p-drawer-content {
-  padding: 0 !important;
-}
-.p-drawer-header {
-  padding: 0 !important;
+.drawerMenu {
+  .p-drawer-content {
+    padding: 0 !important;
+  }
+  .p-drawer-header {
+    padding: 0 !important;
+  }
 }
 </style>

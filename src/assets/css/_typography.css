@@ -45,5 +45,5 @@ h3 {
 
 /* Классы для жирного и нормального текста */
 .font-bold {
-    font: var(--booking-font-weight-bold) var(--booking-font-family);
+    font-weight: var(--booking-font-weight-bold);
 }
